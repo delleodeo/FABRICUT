@@ -1,0 +1,17 @@
+LOGO SETUP INSTRUCTIONS
+=======================
+
+Please place your logo image at:
+src/assets/logo.jpg
+
+The logo should be:
+- Format: JPG (or PNG/SVG if you prefer, just update the path in MainLayout.vue)
+- Recommended size: 200x200 pixels or larger (square)
+- Will be displayed at 50x50 pixels in the sidebar
+
+If you don't have the logo file yet, the application will show a broken image icon until you add it.
+
+To change the logo format:
+1. Open: src/components/MainLayout.vue
+2. Find: <img src="@/assets/logo.jpg" ... />
+3. Change to: <img src="@/assets/logo.png" ... /> (or your format)
