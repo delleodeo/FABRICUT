@@ -7,9 +7,14 @@ import appointmentRoutes from './routes/appointments.js'
 import measurementRoutes from './routes/measurements.js'
 // sdasdasdasda
 const app = express()
-const PORT = 5000
-const MONGO_URI = 'mongodb+srv://bacongcodaryl_db_user:inventory@cluster0.vqe8g5l.mongodb.net/?appName=Cluster0'
+// const PORT = 5000
+// const MONGO_URI = 'mongodb+srv://bacongcodaryl_db_user:inventory@cluster0.vqe8g5l.mongodb.net/?appName=Cluster0'
+const PORT = process.env.PORT || 5001
+const MONGO_URI = process.env.MONGO_URI
 
+if (!MONGO_URI) {
+  throw new Error('MONGO_URI environment variable is required')
+}
 
 app.use(cors({ origin: '*' }))
 app.use(express.json())
