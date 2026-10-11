@@ -8,7 +8,7 @@ import measurementRoutes from './routes/measurements.js'
 // sdasdasdasda
 const app = express()
 const PORT = 5000
-const MONGO_URI = 'mongodb+srv://bacongcodaryl_db_user:dWxKq9GkXhcM8HHc@cluster0.vqe8g5l.mongodb.net/?appName=Cluster0'
+const MONGO_URI = 'mongodb+srv://bacongcodaryl_db_user:inventory@cluster0.vqe8g5l.mongodb.net/?appName=Cluster0'
 
 
 app.use(cors({ origin: '*' }))
