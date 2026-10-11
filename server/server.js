@@ -5,13 +5,13 @@ import clientRoutes from './routes/clients.js'
 import orderRoutes from './routes/orders.js'
 import appointmentRoutes from './routes/appointments.js'
 import measurementRoutes from './routes/measurements.js'
-
+// sdasdasdasda
 const app = express()
 const PORT = 5000
 const MONGO_URI = 'mongodb+srv://bacongcodaryl_db_user:dWxKq9GkXhcM8HHc@cluster0.vqe8g5l.mongodb.net/?appName=Cluster0'
 
 
-app.use(cors({ origin: 'http://localhost:3000' }))
+app.use(cors({ origin: '*' }))
 app.use(express.json())
 
 mongoose.connect(MONGO_URI)
